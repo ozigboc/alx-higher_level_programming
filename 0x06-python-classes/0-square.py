@@ -8,4 +8,4 @@ class Square:
     pass
 
 
-    a = Square()
+a = Square()

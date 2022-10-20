@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
    this function finds a peak in a list of unsorted integers
-   """
+"""
 
 
    def find_peak(numbr):
        '''
-       Finds the peak in a list of numbers
+          Finds the peak in a list of numbers
        '''
        length = len(numbr)
        if length == 0:
@@ -20,9 +20,9 @@
            value = numbr[idx]
            if (idx > 0 and idx < length - 1 and
                    numbr[idx + 1] <= value and numbr[idx - 1] <= value):
-               return value
+                   return value
            elif idx == 0 and numbr[idx + 1] <= value:
                return value
            elif idx == length - 1 and numbr[idx - 1] <= value:
                return value
-           return pick
+       return pick
